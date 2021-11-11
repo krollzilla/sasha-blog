@@ -13,8 +13,6 @@ class Post extends Component
 
     public function mount($slug){
         $this->post = BlogPost::where('slug', $slug)->first();
-        $this->comments = BlogComment::where('post_id', $this->post->id)->get();
-        $this->comments->toArray();
     }
 
     public function render()

@@ -25,6 +25,13 @@ class PostCreate extends Component
         $this->post->slug = Str::slug($this->post->title);
         $this->post->save();
         $this->saveSuccess = true;
+        $this->updatePage(); //перенаправляем на только что добавленный пост.
+    }
+
+    public function updatePage()
+    {
+        $slug = $this->post->slug;
+        return redirect()->to("post/$slug");
     }
 
     public function render()

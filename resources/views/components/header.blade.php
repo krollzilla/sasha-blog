@@ -1,8 +1,8 @@
 <header class="text-gray-700 body-font border-b">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a href="/" class="mr-5 hover:text-gray-900">Home</a>
-            <a href="/blog" class="mr-5 hover:text-gray-900">Blog</a>
+            <a href="/" class="mr-5 hover:text-gray-900">Blog</a>
+            <a href="/post/create" class="mr-5 hover:text-gray-900">Add post</a>
             <a href="/about" class="mr-5 hover:text-gray-900">About</a>
         </nav>
         <a class="flex order-first lg:order-none lg:w-1/5 title-font font-bold items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
