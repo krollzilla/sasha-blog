@@ -16,11 +16,13 @@ class PostCreate extends Component
         'post.body' => 'required|min:6',
     ];
 
-    public function mount(){
+    public function mount()
+    {
         $this->post = new Post;
     }
 
-    public function savePost(){
+    public function savePost()
+    {
         $this->post->user_id = 1;
         $this->post->slug = Str::slug($this->post->title);
         $this->post->save();
